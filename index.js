@@ -16,7 +16,7 @@ const RSAKey = require('rsa-key'),
 	NodeRSA = require('node-rsa'),
 	crypto = require('crypto');
 
-class EasyRSA {
+class SimplifiedRSA {
 	#nodeRSAKey;
 
 	constructor() {
@@ -138,4 +138,4 @@ class EasyRSA {
 	}
 }
 
-module.exports = new EasyRSA();
+module.exports = new SimplifiedRSA();

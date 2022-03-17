@@ -16,41 +16,41 @@ This module leverages on the amazing [RSA-Key](https://www.npmjs.com/package/rsa
 
 It is important to check these modules when you have the time!
 
-# Is it really that **Easy**?
+# Is it really that **Simplified**?
 
 Well, I named it **easy-rsa** for a reason, and here is proof.
 
 ```javascript
 ;(async function () {
-	const EasyRSA = require('easy-rsa');
+	const SimplifiedRSA = require('easy-rsa');
 
 	// Generate Key Pair
-	const keyPair = await EasyRSA.key_pair();
+	const keyPair = await SimplifiedRSA.key_pair();
 	console.log(keyPair);
 
 	// - You can save generated pair as files for later use
 	// - Using Saved keys is easy. JUst Import the Keys
 
 	// Import Public Key...
-	EasyRSA.import_key(keyPair.public_key);
+	SimplifiedRSA.import_key(keyPair.public_key);
 
 	// - Now we are ready to encrypt some content
 	const text = 'Hello RSA!';
 	// Encrypt
-	const encrypted = EasyRSA.encrypt(text);
+	const encrypted = SimplifiedRSA.encrypt(text);
 	console.log('encrypted: ', encrypted);
 
 	// - To Decrypt encrypted content, we need too import our private key
 
 	// Decrypt
-	EasyRSA.import_key(keyPair.private_key);
-	const decrypted = EasyRSA.decrypt(encrypted);
+	SimplifiedRSA.import_key(keyPair.private_key);
+	const decrypted = SimplifiedRSA.decrypt(encrypted);
 	console.log('decrypted: ', decrypted);
 
 	// - You can also convert keys from one format to another. Check out https://www.npmjs.com/package/rsa-key
 
 	// Convert Public Key o pkcs1
-	let pkcs1_public_key = EasyRSA.convert_public(
+	let pkcs1_public_key = SimplifiedRSA.convert_public(
 		keyPair.public_key,
 		'pem',
 		'pkcs1'
@@ -59,7 +59,7 @@ Well, I named it **easy-rsa** for a reason, and here is proof.
 	console.log(pkcs1_public_key);
 
 	// Convert Private Key o pkcs1
-	let pkcs1_private_key = EasyRSA.convert_private(
+	let pkcs1_private_key = SimplifiedRSA.convert_private(
 		keyPair.private_key,
 		'pem',
 		'pkcs1'

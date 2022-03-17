@@ -1,6 +1,6 @@
 {
-  "name": "easy-rsa",
-  "version": "1.0.0",
+  "name": "simple-rsa",
+  "version": "0.0.1",
   "description": "Easy Generation of RSA PEM Keys as well as Encoding/Decoding data and even Converting PEM Keys from one format to the other Like a Boss!",
   "main": "index.js",
   "scripts": {

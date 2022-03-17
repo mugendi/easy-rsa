@@ -1,0 +1,17 @@
+{
+  "name": "easy-rsa",
+  "version": "1.0.0",
+  "description": "Easy Generation of RSA PEM Keys as well as Encoding/Decoding data and even Converting PEM Keys from one format to the other Like a Boss!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["rsa","pem","private","keys","ssh","generate","encryption","decryption","convert","private","pe","der","pkcs1","pkcs8"],
+  "author": "Anthony Mugendi <ngurumugz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-rsa": "^1.1.1",
+    "rsa-key": "^0.0.6"
+  },
+  "devDependencies": {}
+}
